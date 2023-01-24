@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+   <body class="bg-light">
+    <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="fondo web.png" alt="Logo" width="50" height="34" class="d-inline-block align-text-top">
+
+              Maser
+          </a>
+        </div>
+      </nav> 
+    </header>
+
+        <div class="container">
+          <div class="col-md-12 order-md-1">
+            <h4 class="mb-3">Formulario de Registro</h4>
+            <form id="contact">
+              <div class="row">
+                <div class="col-md-8 mb-3 validar">
+                    <label for="firstName">Nombre</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="nombre" value="" required>
+                    <div class="invalid-feedback">
+                    </div>
+      
+                </div>
+                <div class="col-md-8 mb-3 validar">
+                    <label for="lastName">Apellidos</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="apellido" value="" required>
+                    <div class="invalid-feedback">
+                    </div>
+                </div>
+                
+                <div class="col-md-8 mb-3 validar">
+                    <label for="dni">Dni</label>
+
+                    <input type="text" class="form-control" id="docIdent" name="docIdent" placeholder="Introduce tu DNI" value="" required>
+                    <div class="invalid-feedback">
+                    </div>
+                </div>
+      
+                <div class="col-md-8 mb-3 validar">
+                   <label for="email">Email </label>
+                   <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback">
+                  </div>
+                </div>
+      
+                <div class="col-md-8 mb-3 validar">
+                  <label for="telefono">Móvil</label>
+                  <input type="tel" class="form-control" id="movil" placeholder="644535888" required>
+                  <div class="invalid-feedback">
+                  </div>
+                </div>
+      
+                <div class="col-md-8 mb-3 validar">
+                  <label for="address2">Usuario</label>
+                  <input type="text" class="form-control" id="usuario" placeholder="usuario">
+                </div>
+
+                <div class="col-md-8 mb-3 validar">
+                    <label for="zip">Código postal</label>
+                    <input type="text" class="form-control" id="cp" name="cp" placeholder="" pattern="[0-9]{5}" title="Six or more characters" required>
+                  </div>
+      
+                <div class="row">
+                  <div class="col-md-5 mb-3">
+                    <label for="country">Te interesa Maser por:</label>
+                    <select class="custom-select d-block w-100" id="solicitud" required>
+                      <option value="">Selecciona...</option>
+                      <option value="motivo-1">Consulta presencial</option>
+                      <option value="motivo-2">Consulta Online</option>
+                      <option value="motivo-3">Terapia de Grupo</option>
+                      <option value="motivo-4">Trabaja con nosotras</option>
+                      <option value="motivo-5">Invierte en cambiar Vidas</option>
+                    </select>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+      
+                  <label for="agree">
+                    <input type="checkbox" id="agree" name="agree" value="agree" required> Aceptar <a href="
+                    https://www.boe.es/eli/es/l/2002/07/11/34/con" target="_blank">Términos</a> y <a href="
+                    https://www.boe.es/eli/es/l/2002/07/11/34/con">Condiciones</a> de uso.
+                  </label>
+                </div>
+      
+                <hr class="mb-4">
+            
+              <button class="btn btn-primary btn-block" type="submit">Enviar</button>
+          
+             </div> 
+            </form>
+            
+  
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
